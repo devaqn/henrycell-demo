@@ -2,6 +2,7 @@ import { buttonVariants } from "@/components/ui/button";
 import { Eyebrow } from "@/components/Eyebrow";
 import { cn } from "@/lib/utils";
 import { instagramStats, instagramUrl } from "@/data/content";
+import henrryCellLogo from "@/assets/henrycell-logo.webp";
 
 export function SocialProof() {
   return (
@@ -22,9 +23,11 @@ export function SocialProof() {
 
         <div className="mx-auto w-full max-w-sm rounded-2xl border border-border bg-surface p-6 shadow-card">
           <div className="flex items-center gap-3">
-            <div className="h-12 w-12 rounded-full bg-[conic-gradient(from_200deg,#ffdd55,#ff543e_25%,#c837ab_55%,#6a5ae0_80%,#ffdd55)] p-[2.5px]">
-              <div className="h-full w-full rounded-full bg-surface-2" />
-            </div>
+            <img
+              src={henrryCellLogo}
+              alt="Logo da Henrry Cell"
+              className="h-12 w-12 rounded-xl border border-border object-cover"
+            />
             <div>
               <div className="text-[15px] font-semibold">henrry.cell</div>
               <div className="text-[12.5px] text-muted-foreground">

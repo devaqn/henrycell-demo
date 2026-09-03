@@ -1,6 +1,7 @@
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import { instagramUrl } from "@/data/content";
+import { whatsappUrl } from "@/data/content";
+import henrryCellLogo from "@/assets/henrycell-logo.webp";
 
 const links = [
   { href: "#servicos", label: "Serviços" },
@@ -14,9 +15,11 @@ export function Nav() {
     <header className="sticky top-0 z-20 border-b border-border/70 bg-background/85 backdrop-blur">
       <nav className="container flex items-center justify-between py-4">
         <a href="#topo" className="flex items-center gap-2.5">
-          <span className="flex h-8 w-8 items-center justify-center rounded-[9px] bg-gradient-to-br from-brand to-brand-deep font-display text-[15px] font-extrabold text-brand-foreground">
-            H
-          </span>
+          <img
+            src={henrryCellLogo}
+            alt="Henrry Cell"
+            className="h-8 w-8 rounded-[9px] object-cover"
+          />
           <span className="font-display text-[17px] font-bold">
             Henrry<span className="text-brand-deep">Cell</span>
           </span>
@@ -31,7 +34,7 @@ export function Nav() {
         </div>
 
         <a
-          href={instagramUrl}
+          href={whatsappUrl}
           target="_blank"
           rel="noopener noreferrer"
           className={cn(buttonVariants({ variant: "primary", size: "sm" }))}

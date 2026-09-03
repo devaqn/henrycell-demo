@@ -1,6 +1,6 @@
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import { contactEmail, instagramUrl } from "@/data/content";
+import { instagramUrl, whatsappUrl } from "@/data/content";
 
 export function FinalCta() {
   return (
@@ -16,15 +16,20 @@ export function FinalCta() {
         </p>
         <div className="mt-7 flex flex-wrap justify-center gap-3">
           <a
-            href={instagramUrl}
+            href={whatsappUrl}
             target="_blank"
             rel="noopener noreferrer"
             className={cn(buttonVariants({ variant: "primary", size: "lg" }))}
           >
-            Chamar devaqn no Instagram
+            Chamar no WhatsApp
           </a>
-          <a href={`mailto:${contactEmail}`} className={cn(buttonVariants({ variant: "dark", size: "lg" }))}>
-            {contactEmail}
+          <a
+            href={instagramUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={cn(buttonVariants({ variant: "dark", size: "lg" }))}
+          >
+            Ver perfil no Instagram
           </a>
         </div>
       </div>

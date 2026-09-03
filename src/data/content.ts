@@ -1,5 +1,7 @@
 export const instagramUrl = "https://instagram.com/henrry.cell";
-export const contactEmail = "pedromiguelaqn@gmail.com";
+export const whatsappUrl =
+  "https://wa.me/5581982464825?text=" +
+  encodeURIComponent("Olá! Vi o site da Henrry Cell e queria saber mais.");
 
 export const stats = [
   { value: "5", label: "anos de mercado" },

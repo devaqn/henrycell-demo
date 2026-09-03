@@ -3,7 +3,7 @@ import { Check } from "lucide-react";
 import { Eyebrow } from "@/components/Eyebrow";
 import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import { instagramUrl } from "@/data/content";
+import { whatsappUrl } from "@/data/content";
 
 const heroMeta = [
   { value: "5 anos", label: "de mercado" },
@@ -72,12 +72,12 @@ export function Hero() {
 
           <div className="mt-8 flex flex-wrap gap-3">
             <a
-              href={instagramUrl}
+              href={whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
               className={cn(buttonVariants({ variant: "primary", size: "lg" }))}
             >
-              Chamar no Instagram →
+              Chamar no WhatsApp →
             </a>
             <a href="#lojas" className={cn(buttonVariants({ variant: "ghost", size: "lg" }))}>
               Ver as duas lojas
